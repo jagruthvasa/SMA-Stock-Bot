@@ -26,7 +26,9 @@ The bot is designed to monitor the Bank Nifty stock at 15-minute intervals. When
 
 - **SMA Reference:** You can check the crossovers of the 9-day and 21-day SMAs in Zerodha. 
 
-Here is a screenshot showing the 9 SMA and 21 SMA crossovers:
+Here is a screenshot showing the 9 SMA and 21 SMA crossovers: 
+
+Green Line (9 SMA) and Red Lins (21 SMA)
 
 <img width="1439" alt="image" src="https://github.com/user-attachments/assets/b9da0f22-a822-451c-9600-60e8bb9abbc4">
 
