@@ -39,3 +39,100 @@
   "message": "Stock monitoring started"
 }
 ```
+
+### **2. Trade Report**
+
+**Endpoint:** `/report`
+
+**Method:** `GET`
+
+**Response:**
+```json
+{
+  "status": "success",
+  "totalProfit": 150.50,
+  "trades": [
+    {
+      "action": "buy",
+      "price": 50000,
+      "timestamp": "2024-10-04T09:15:00+0530"
+    },
+    {
+      "action": "sell",
+      "price": 50500,
+      "profit": 500,
+      "timestamp": "2024-10-04T11:00:00+0530"
+    }
+  ],
+  "currentPosition": "No active position"
+}
+```
+## 📈 **Trading Logic**
+
+The bot uses a **Simple Moving Average (SMA)** crossover strategy:
+
+- **Buy Signal**: When the 9-day SMA crosses above the 21-day SMA.
+- **Sell Signal**: When the 9-day SMA crosses below the 21-day SMA.
+- **Profit Calculation**: Tracks profit for each trade, accumulating total profit or loss.
+
+## 🛠️ **Setup and Installation**
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/your-username/StockSMA-CrossoverBot.git
+    ```
+
+2. Navigate to the project directory:
+    ```bash
+    cd StockSMA-CrossoverBot
+    ```
+
+3. Install dependencies:
+    ```bash
+    npm install
+    ```
+
+4. Create a `.env` file in the root directory and add the following:
+    ```
+    user_id=your_user_id
+    enc_token=your_auth_token
+    kite_api=https://kite.zerodha.com/oms/instruments/historical/260105/15minute
+    ```
+
+5. Run the server:
+    ```bash
+    npm start
+    ```
+
+6. Access the API at `http://localhost:3000`.
+
+## 📝 **Usage**
+
+1. **Start Monitoring**:
+    - Hit the `/trade` endpoint with the appropriate date range to start monitoring stock prices based on the SMA crossover strategy.
+  
+2. **View Reports**:
+    - Access the `/report` endpoint to get detailed profit/loss reports and track all executed trades.
+
+## 📅 **Handling Holidays**
+
+The bot intelligently handles cases where the market is closed (e.g., holidays or weekends). If no data is available for the requested `startDate`, it will automatically fetch data from the most recent trading day.
+
+## 🛡️ **Error Handling**
+
+- Ensures valid date formats (`YYYY-MM-DD`).
+- Gracefully handles API failures and invalid responses.
+- Stops monitoring when insufficient data is available.
+
+## 🤝 **Contributing**
+
+Contributions are welcome! If you want to improve the bot, feel free to open issues and submit pull requests.
+
+## 📄 **License**
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👨‍💻 **Author**
+
+- **Sai Jagruth** - [GitHub Profile](https://github.com/jagruthvasa)
+
