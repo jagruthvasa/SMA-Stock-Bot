@@ -123,8 +123,11 @@ Please Visit this url https://kite.zerodha.com/profile
 
 The bot intelligently handles cases where the market is closed (e.g., holidays or weekends). If no data is available for the requested `startDate`, it will automatically fetch data from the most recent trading day.
 
+## Postman Collection
 
-## 👨‍💻 **Author**
+Here is the [Postman Collection](https://www.postman.com/aviation-architect-34779856/sma-stock-bot/collection/evzxq8u/stock-bot?action=share&creator=36467777) you can use to test the APIs.
 
-- **Sai Jagruth** - [GitHub Profile](https://github.com/jagruthvasa)
+## Support
+
+If you encounter any server downtime issues, please email: [jagruthvasa@gmail.com](mailto:jagruthvasa@gmail.com)
 
