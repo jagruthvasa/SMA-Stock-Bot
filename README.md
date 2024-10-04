@@ -12,6 +12,7 @@
 - **Real-Time Simulation**: Simulates stock price monitoring with adjustable time intervals.
 - **Holiday Handling**: Automatically handles missing data for holidays, fetching the last available date.
 - **Error Handling**: Validates input dates and handles invalid formats gracefully.
+- **Added 1 Sec Interval**: Monitors the price movements at a 1-minute interval
 
 ## 🔧 **Tech Stack**
 
