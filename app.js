@@ -79,11 +79,11 @@ const evaluateTradingLogic = (sma9, sma21, currentPrice, previousPosition) => {
 const trackTrade = (action, price, currentTime) => {
       if (action === 'buy') {
             currentPosition = { type: 'buy', price };
-            trades.push({ action: 'buy', price, timestamp: formatTimestamp(currentTime) });
+            trades.push({ action: 'buy', price, timestamp: currentTime });
       } else if (action === 'sell' && currentPosition) {
             const profit = price - currentPosition.price;
             totalProfit += profit;
-            trades.push({ action: 'sell', price, 'profit/loss': profit, timestamp: formatTimestamp(currentTime) });
+            trades.push({ action: 'sell', price, 'profit/loss': profit, timestamp: currentTime });
             currentPosition = null; // Reset position after sell
       }
 };
@@ -160,9 +160,6 @@ app.get('/trade', async (req, res) => {
       }
 });
 
-const formatTimestamp = (timestamp) => {
-      return moment(timestamp).format('MMMM Do YYYY, h:mm:ss a');
-};
 
 // Endpoint to get the final trade report
 app.get('/report', (req, res) => {
