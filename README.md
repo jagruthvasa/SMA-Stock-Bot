@@ -6,7 +6,7 @@
 
 ## 🚀 **Features**
 
-- **SMA Crossover Strategy**: Uses a 9-period and 21-period SMA crossover to determine buy/sell signals.
+- **SMA Crossover Strategy**: Uses a 9-period and 21-period SMA crossover to determine buy/sell signals for 15 mins timeframe in Nifty Bank.
 - **Profit & Loss Tracking**: Monitors trades and generates detailed profit and loss reports.
 - **API Integration**: Fetches stock data using a predefined API, with configurable date ranges.
 - **Real-Time Simulation**: Simulates stock price monitoring with adjustable time intervals.
@@ -19,6 +19,22 @@
 - **Express.js**: Web framework for building REST APIs.
 - **Moment.js**: Library for date manipulation and validation.
 - **dotenv**: Manages environment variables securely.
+
+## Testing
+
+The bot is designed to monitor the Bank Nifty stock at 15-minute intervals. When testing the functionality, please use the following reference:
+
+- **SMA Reference:** You can check the crossovers of the 9-day and 21-day SMAs in Zerodha. 
+
+Here is a screenshot showing the 9 SMA and 21 SMA crossovers:
+
+<img width="1439" alt="image" src="https://github.com/user-attachments/assets/b9da0f22-a822-451c-9600-60e8bb9abbc4">
+
+- **Live Data Results:** The results from my bot will show that both buying and selling occur at the same points as indicated by the live data.
+
+<img width="1072" alt="image" src="https://github.com/user-attachments/assets/3af3b9a2-bef7-462d-a764-96484c225b5b">
+
+
 
 ## 📘 **API Endpoints**
 
