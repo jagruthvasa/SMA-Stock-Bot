@@ -79,7 +79,7 @@ The bot uses a **Simple Moving Average (SMA)** crossover strategy:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/SMA-Stock-Bot.git
+     https://github.com/jagruthvasa/SMA-Stock-Bot.git
     ```
 
 2. Navigate to the project directory:
