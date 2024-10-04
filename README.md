@@ -147,5 +147,5 @@ Here is the [Postman Collection](https://www.postman.com/aviation-architect-3477
 
 ## Support
 
-If you encounter any server downtime issues, please email: [jagruthvasa@gmail.com](mailto:jagruthvasa@gmail.com)
+If you encounter any issues, please email: [jagruthvasa@gmail.com](mailto:jagruthvasa@gmail.com)
 
