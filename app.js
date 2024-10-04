@@ -6,7 +6,7 @@ dotenv.config();
 const app = express();
 const PORT = 3000;
 const open_interest_enabled = 1;
-const kite_api="https://kite.zerodha.com/oms/instruments/historical/260105/15minute"
+const kite_api = "https://kite.zerodha.com/oms/instruments/historical/260105/15minute"
 
 let trades = [];
 let currentPosition = null; // Will store either 'buy' or 'sell'
@@ -137,11 +137,17 @@ app.get('/trade', async (req, res) => {
             return res.status(400).json({ status: 'error', message: 'Stock monitoring already in progress. To check the report, use /report endpoint' });
       }
 
+      // Reset trades and profit at the start of a new request
+      trades = [];  // Clear old trades
+      totalProfit = 0;  // Reset total profit
+      currentPosition = null;  // Clear current position
+      startMonitoring = 'false';  // Reset monitoring status
+
       try {
             // Fetch stock data
             const candles = await fetchStockData(startDate, endDate);
 
-            if (candles.length === 0) {
+            if (candles.length === 0) {``
                   return res.status(400).json({ status: 'error', message: 'Looks like it is a holiday, please select a valid date' });
             }
 
