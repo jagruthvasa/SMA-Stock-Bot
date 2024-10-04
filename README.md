@@ -1,8 +1,8 @@
-# **StockSMA-CrossoverBot**
+# **SMA-Stock-Bot**
 
 ## 📊 **Overview**
 
-**StockSMA-CrossoverBot** is a stock trading bot designed to simulate trades based on a Simple Moving Average (SMA) crossover strategy using a 9-period and 21-period moving average. The bot continuously monitors stock price changes and executes trades when a crossover occurs, providing detailed reports of the profit and loss from the trades. The bot handles data fetching, error handling, and simulates real-time trading using historical data with the ability to handle market holidays.
+**SMA-Stock-Bot** is a stock trading bot designed to simulate trades based on a Simple Moving Average (SMA) crossover strategy using a 9-period and 21-period moving average. The bot continuously monitors stock price changes and executes trades when a crossover occurs, providing detailed reports of the profit and loss from the trades. The bot handles data fetching, error handling, and simulates real-time trading using historical data with the ability to handle market holidays.
 
 ## 🚀 **Features**
 
@@ -79,12 +79,12 @@ The bot uses a **Simple Moving Average (SMA)** crossover strategy:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/StockSMA-CrossoverBot.git
+    git clone https://github.com/your-username/SMA-Stock-Bot.git
     ```
 
 2. Navigate to the project directory:
     ```bash
-    cd StockSMA-CrossoverBot
+    cd SMA-Stock-Bot
     ```
 
 3. Install dependencies:
