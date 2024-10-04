@@ -96,6 +96,8 @@ The bot uses a **Simple Moving Average (SMA)** crossover strategy:
 
 ## 🛠️ **Setup and Installation**
 
+(I have hosted this application on Render.com. You can directly test the API using the provided Postman collection below.)
+
 1. Clone the repository:
     ```bash
      https://github.com/jagruthvasa/SMA-Stock-Bot.git
