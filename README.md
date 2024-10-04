@@ -97,13 +97,17 @@ The bot uses a **Simple Moving Average (SMA)** crossover strategy:
     user_id=your_user_id
     enc_token=your_auth_token
     ```
+    user_id is your zerodha account id (consists of 6 characters)
+    enc_token you will find your enc_token when you login in zerodha account and go to profile page and you will see api "full" in the network tab and go to the request header and there you can see the enc_token added image for your reference.
+<img width="1213" alt="image" src="https://github.com/user-attachments/assets/fb915024-0603-4ce6-be13-b6b05ef2696e">
 
-5. Run the server:
+
+6. Run the server:
     ```bash
     npm start
     ```
 
-6. Access the API at `http://localhost:3000`.
+7. Access the API at `http://localhost:3000`.
 
 ## 📝 **Usage**
 
