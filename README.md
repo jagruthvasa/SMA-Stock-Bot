@@ -50,7 +50,7 @@
 ```json
 {
   "status": "success",
-  "totalProfit": 150.50,
+  "totalProfit": 500,
   "trades": [
     {
       "action": "buy",
@@ -96,7 +96,6 @@ The bot uses a **Simple Moving Average (SMA)** crossover strategy:
     ```
     user_id=your_user_id
     enc_token=your_auth_token
-    kite_api=https://kite.zerodha.com/oms/instruments/historical/260105/15minute
     ```
 
 5. Run the server:
@@ -118,19 +117,6 @@ The bot uses a **Simple Moving Average (SMA)** crossover strategy:
 
 The bot intelligently handles cases where the market is closed (e.g., holidays or weekends). If no data is available for the requested `startDate`, it will automatically fetch data from the most recent trading day.
 
-## 🛡️ **Error Handling**
-
-- Ensures valid date formats (`YYYY-MM-DD`).
-- Gracefully handles API failures and invalid responses.
-- Stops monitoring when insufficient data is available.
-
-## 🤝 **Contributing**
-
-Contributions are welcome! If you want to improve the bot, feel free to open issues and submit pull requests.
-
-## 📄 **License**
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 👨‍💻 **Author**
 
