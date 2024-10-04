@@ -6,7 +6,7 @@
 
 ## 🚀 **Features**
 
-- **SMA Crossover Strategy**: Uses a 9-period and 21-period SMA crossover to determine buy/sell signals for 15 mins timeframe in Nifty Bank.
+- **SMA Crossover Strategy**: Uses a 9-period and 21-period SMA crossover to determine buy/sell signals for **15 mins timeframe in Nifty Bank.**
 - **Profit & Loss Tracking**: Monitors trades and generates detailed profit and loss reports.
 - **API Integration**: Fetches stock data using a predefined API, with configurable date ranges.
 - **Real-Time Simulation**: Simulates stock price monitoring with adjustable time intervals.
